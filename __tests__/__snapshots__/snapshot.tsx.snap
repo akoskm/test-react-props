@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders homepage unchanged 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <main>
+      <h1
+        class="title"
+      >
+        Welcome to 
+        <a
+          href="https://nextjs.org"
+        >
+          Next.js!
+        </a>
+      </h1>
+      <p
+        class="description"
+      >
+        Get started by editing 
+        <code>
+          pages/index.js
+        </code>
+      </p>
+      <div>
+        <span>
+          John
+           
+          Doe
+          , 
+          35
+        </span>
+        <div>
+          <span>
+            User 
+             doesn't have permission to access this page.
+          </span>
+        </div>
+      </div>
+    </main>
+    <footer
+      class="footer"
+    >
+      <a
+        href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Powered by
+         
+        <span
+          class="logo"
+        >
+          <img
+            alt="Vercel Logo"
+            data-nimg="1"
+            decoding="async"
+            height="16"
+            loading="lazy"
+            src="/vercel.svg"
+            style="color: transparent;"
+            width="72"
+          />
+        </span>
+      </a>
+    </footer>
+  </div>
+</div>
+`;
