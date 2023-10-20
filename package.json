@@ -8,6 +8,7 @@
     "test:ci": "jest --ci"
   },
   "dependencies": {
+    "@heroicons/react": "^2.0.18",
     "immutable": "^5.0.0-beta.4",
     "next": "latest",
     "react": "^18.2.0",

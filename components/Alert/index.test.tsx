@@ -8,8 +8,3 @@ describe('Alert', () => {
     expect(container).toMatchSnapshot();
   });
 });
-
-
-
-
-
