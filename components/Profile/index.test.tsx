@@ -2,8 +2,8 @@ import { Map } from "immutable";
 import { render, screen } from "@testing-library/react";
 import Profile from "./index";
 
-const profileFn = jest.fn();
-jest.mock('../PermissionsContainer', () => (props:any) => profileFn(props));
+const permissionsContainerMock = jest.fn();
+jest.mock('../PermissionsContainer', () => (props:any) => permissionsContainerMock(props));
 
 describe("Profile", () => {
   const user = Map({
@@ -20,14 +20,14 @@ describe("Profile", () => {
   const renderProfile = () => render(<Profile user={user} />);
 
   test("renders app", () => {
-    profileFn.mockImplementation(props => {
+    permissionsContainerMock.mockImplementation(props => {
       const Profile = jest.requireActual(
         '../PermissionsContainer',
       ).default;
       return <Profile {...props} />;
     });
     renderProfile();
-    expect(profileFn).toHaveBeenCalledWith({
+    expect(permissionsContainerMock).toHaveBeenCalledWith({
       user
     })
   });
